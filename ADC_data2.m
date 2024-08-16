@@ -12,7 +12,7 @@ VCTAT = data.data(:,3);
 vos = 10e-3;
 Fs = 1e+06;
 a = 4.32;
-DF = 512; %WILL VARY 64-8192 (2^x @ conversion type)
+DF = 2048; %WILL VARY 64-8192 (2^x @ conversion type)
 vn = 10e-6;
 
 %CREATING DATA STORAGE
@@ -43,7 +43,7 @@ writetable(ADC_filter_data,'dts_adc_output.csv')
 %created seperate ADC count file to run in python script
 writetable([ADC_filter_data(:,1), ADC_filter_data(:,2)],'dts_adc_ADC_count.xlsx')
 movefile('dts_adc_ADC_count.xlsx','C:\Users\adity\Desktop\adc_4'); %C:\Users\adity\Desktop\adc_4
-%C:\Users\SinhaAd\Desktop\ADC\4_o
+%C:\Users\SinhaAd\Desktop\ADC\4_o\adc_4
 %IF THE LOCATION OF THE PYTHON FILE IS DIFFERENT FROM HEN CHANGE TO
 %CORRECT LOCATION
 %END OF FIRTS PART
