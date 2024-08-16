@@ -9,7 +9,7 @@ VPTAT = data.data(:,2);
 VCTAT = data.data(:,3);
 
 %ASSIGNING NECESSARY VALUES FOR SIMULATION
-vos = 0;
+vos = 10e-3;
 Fs = 1e+06;
 a = 4.32;
 DF = 512; %WILL VARY 64-8192 (2^x @ conversion type)
@@ -42,9 +42,9 @@ save("ADC_filter_data");
 writetable(ADC_filter_data,'dts_adc_output.csv')
 %created seperate ADC count file to run in python script
 writetable([ADC_filter_data(:,1), ADC_filter_data(:,2)],'dts_adc_ADC_count.xlsx')
-movefile('dts_adc_ADC_count.xlsx','C:\Users\SinhaAd\Desktop\ADC\4_o'); 
-%IF THE LOCATION OF THE PYTHON FILE IS DIFFERENT FROM
-%['C:\Users\MaryMargretA\Downloads\Temperature calibrator'] THEN CHANGE TO
+movefile('dts_adc_ADC_count.xlsx','C:\Users\adity\Desktop\adc_4'); %C:\Users\adity\Desktop\adc_4
+%C:\Users\SinhaAd\Desktop\ADC\4_o
+%IF THE LOCATION OF THE PYTHON FILE IS DIFFERENT FROM HEN CHANGE TO
 %CORRECT LOCATION
 %END OF FIRTS PART
 
