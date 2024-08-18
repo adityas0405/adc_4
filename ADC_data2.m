@@ -6,11 +6,19 @@ TEMP = data.data(:,1);
 VPTAT = data.data(:,2);
 VCTAT = data.data(:,3);
 
+<<<<<<< Updated upstream
 % ASSIGNING NECESSARY VALUES FOR SIMULATION
 vos = 5e-3;
 Fs = 1e+06;
 a = 4.32;
 DF = 2048; % WILL VARY 64-8192 (2^x @ conversion type)
+=======
+%ASSIGNING NECESSARY VALUES FOR SIMULATION
+vos = 0;
+Fs = 1e+06;
+a = 4.32;
+DF = 2048; %WILL VARY 64-8192 (2^x @ conversion type)
+>>>>>>> Stashed changes
 vn = 10e-6;
 
 % CREATING DATA STORAGE
